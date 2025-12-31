@@ -7,7 +7,7 @@ namespace fgl
 {
 
 class GLWidget : public QOpenGLWidget
-	, protected QOpenGLFunctions
+	, public QOpenGLFunctions
 {
 	Q_OBJECT
 

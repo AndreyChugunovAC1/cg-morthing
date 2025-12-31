@@ -1,11 +1,18 @@
 set(SRCS
     main.cpp
     Window.cpp
+    Duck.cpp
+    Morth.cpp
+    Duck.h
     Window.h
+    Morth.h
 
     Shaders/diffuse.fs
     Shaders/diffuse.vs
-    Textures/voronoi.png
+    Shaders/morth.fs
+    Shaders/morth.vs
+    Models/Duck.glb
+    Textures/Duck.png
 
     resources.qrc
 )

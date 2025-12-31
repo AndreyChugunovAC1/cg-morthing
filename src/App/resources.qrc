@@ -1,12 +1,14 @@
 <RCC>
     <qresource prefix="/">
-        <file>Models/chess.glb</file>
+        <file>Models/Duck.glb</file>
     </qresource>
     <qresource prefix="/">
-        <file>Textures/voronoi.png</file>
+        <file>Textures/Duck.png</file>
     </qresource>
     <qresource prefix="/">
         <file>Shaders/diffuse.fs</file>
         <file>Shaders/diffuse.vs</file>
+        <file>Shaders/morth.fs</file>
+        <file>Shaders/morth.vs</file>
     </qresource>
 </RCC>
