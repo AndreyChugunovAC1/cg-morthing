@@ -42,7 +42,7 @@ void main()
 
 
 	// dot light:
-	vec3 dot_light_pos = vec3(200, 2 * dotLightHeight, 200);
+	vec3 dot_light_pos = vec3(30, 2 * dotLightHeight, 30);
 	vec3 dot_light_dir = normalize(vec3(-1, 0, -1));// normalize(-dot_light_pos);
 	float halfAngleCos = cos(dotLightAngle / 2.0f);
 	vec3 to_light = normalize(dot_light_pos - vert_point_pos);

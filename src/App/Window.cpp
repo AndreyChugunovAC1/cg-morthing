@@ -112,7 +112,7 @@ Window::Window() noexcept
 
 	auto morthingLayout = new QHBoxLayout();
 
-	auto morthingManual = new QCheckBox("Manual lerp:", this);
+	auto morthingManual = new QCheckBox("Manual lerp", this);
 	morthingManual->setStyleSheet("QCheckBox { color: white; min-width: 120px; }");
 	morthingManual->setChecked(false);
 	connect(morthingManual, &QCheckBox::toggled, [this](bool checked) {
@@ -120,7 +120,7 @@ Window::Window() noexcept
 		update();
 	});
 
-	auto morthingModeLabel = new QLabel("Mode:", this);
+	auto morthingModeLabel = new QLabel("Cube color:", this);
 	morthingModeLabel->setStyleSheet("QLabel { color: white; min-width: 120px; }");
 
 	auto morthingMode = new QSlider(Qt::Horizontal, this);

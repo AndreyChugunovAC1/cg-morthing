@@ -95,8 +95,8 @@ private:
 	float fov_ = 60.0f;
 
 public:
-	QVector3D userPos_ = QVector3D(20, 7, 0);
-	QVector3D userDir_ = QVector3D(-20, -5, 0).normalized();
+	QVector3D userPos_ = QVector3D(25, 10, -10);
+	QVector3D userDir_ = QVector3D(-20, -5, 10).normalized();
 	QVector3D userUp_ = QVector3D(0, 1, 0);
 	QVector3D userRight_ = QVector3D::crossProduct(userDir_, userUp_).normalized();
 
