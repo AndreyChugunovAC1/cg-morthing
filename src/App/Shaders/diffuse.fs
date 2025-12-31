@@ -42,14 +42,14 @@ void main()
 
 
 	// dot light:
-	vec3 dot_light_pos = vec3(20, 2 * dotLightHeight, 20);
-	vec3 dot_light_dir = normalize(-dot_light_pos);
+	vec3 dot_light_pos = vec3(200, 2 * dotLightHeight, 200);
+	vec3 dot_light_dir = normalize(vec3(-1, 0, -1));// normalize(-dot_light_pos);
 	float halfAngleCos = cos(dotLightAngle / 2.0f);
 	vec3 to_light = normalize(dot_light_pos - vert_point_pos);
 
 	if(enableDotLight) 
 	{
-		float cosangle = clamp(abs(dot(to_light, reflected_to_user)), 0.0, 1.0);
+		float cosangle = clamp(abs(dot(-dot_light_dir, to_light)), 0.0, 1.0);
 		if (cosangle > halfAngleCos) 
 		{
 			color += vec3(0.24, 0.78, 0.69) * 0.3 // kd

@@ -108,7 +108,7 @@ public:
 	float dotLightAngle_;
 	bool enableDotLight_;
 
-	float mode_;
+	int mode_;
 	bool enableManual_;
 	float interpolation_;
 

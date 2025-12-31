@@ -200,7 +200,7 @@ void Window::onInit()
 
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_CULL_FACE);
-	glClearColor(0.30, 0.47, 0.8, 1.0);
+	glClearColor(0.30 * 0.3, 0.47 * 0.3, 0.8 * 0.3, 1.0);
 
 	// Clear all FBO buffers
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
